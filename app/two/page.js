@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play, Star, Users, Film, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import PricingSection from '@/components/Packs';
 
 export default function MovieLandingPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -16,7 +17,7 @@ export default function MovieLandingPage() {
       year: "2024",
       rating: 8.9,
       price: "$12.99",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='600' fill='url(%23bg)'/%3E%3Ctext x='200' y='320' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EQuantum Rebellion%3C/text%3E%3C/svg%3E",
+      image: "/images/p1.jpg",
       description: "In a dystopian future, rebels fight against quantum overlords using advanced technology."
     },
     {
@@ -26,7 +27,7 @@ export default function MovieLandingPage() {
       year: "2024",
       rating: 9.2,
       price: "$14.99",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Cdefs%3E%3ClinearGradient id='bg2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b6b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ee5a24;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='600' fill='url(%23bg2)'/%3E%3Ctext x='200' y='320' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EShadow Nexus%3C/text%3E%3C/svg%3E",
+      image: "/images/p2.jpg",
       description: "A psychological thriller that blurs the lines between reality and digital consciousness."
     },
     {
@@ -36,7 +37,7 @@ export default function MovieLandingPage() {
       year: "2024",
       rating: 8.7,
       price: "$11.99",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Cdefs%3E%3ClinearGradient id='bg3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d2ff;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%233a7bd5;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='600' fill='url(%23bg3)'/%3E%3Ctext x='200' y='320' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EEternal Horizon%3C/text%3E%3C/svg%3E",
+      image: "/images/p3.jpg",
       description: "An epic journey across unknown worlds in search of the ultimate truth."
     },
     {
@@ -46,7 +47,7 @@ export default function MovieLandingPage() {
       year: "2024",
       rating: 9.0,
       price: "$13.99",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Cdefs%3E%3ClinearGradient id='bg4' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff9a9e;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23fecfef;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='600' fill='url(%23bg4)'/%3E%3Ctext x='200' y='320' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3ENeon Dreams%3C/text%3E%3C/svg%3E",
+      image: "/images/p4.jpg",
       description: "Navigate through a neon-lit cyberpunk world where dreams become reality."
     }
   ];
@@ -194,6 +195,7 @@ export default function MovieLandingPage() {
       </section>
 
       {/* Movies Section */}
+      <PricingSection />
       <section id="movies" className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div 
@@ -237,9 +239,9 @@ export default function MovieLandingPage() {
                         <p className="text-red-400 font-semibold mb-4">{movie.genre}</p>
                         <p className="text-gray-300 mb-6 text-lg">{movie.description}</p>
                         <div className="flex items-center justify-center md:justify-start space-x-4">
-                          <span className="text-2xl font-bold text-green-400">{movie.price}</span>
+                          {/* <span className="text-2xl font-bold text-green-400">{movie.price}</span> */}
                           <button className="px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                            Buy Now
+                            Discover
                           </button>
                         </div>
                       </div>

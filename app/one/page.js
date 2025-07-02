@@ -50,12 +50,12 @@ export default function IronKingTV() {
           >
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-tight tracking-tight">
               IRON KINGTV<br />
-              GAMING PLANS<br />
+              ABONNEMENTS<br />
               <span className="text-white">OFFICIELS</span>
             </h1>
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-md mx-auto md:mx-0">
-              Serveurs puissants, accès à vos jeux préférés,<br />
-              compétitions, live streaming & support eSport inclus.
+              Sans bugs ni coupures, large choix de films et series ,<br />
+              mises á jour quofidiennes
             </p>
           </motion.div>
           <motion.div
@@ -78,32 +78,32 @@ export default function IronKingTV() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Pourquoi choisir IRON KINGTV Gaming?
+              Pourquoi choisir IRON KINGTV ?
             </h2>
             <p className="text-lg text-gray-300">
-              Des forfaits gamers adaptés à tous les niveaux : débutants, streamers, et eSport compétitif.
+              Obtenez le meilleur rapport qualite-prix pour votre abonnement de streaming
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Gamer Starter",
-                price: "19,90",
+                name: "Iron Pro",
+                price: "49,90",
                 color: "orange",
-                features: ["Accès aux jeux PC & Cloud", "Streaming 1080p"]
+                features: ["3900 chaines", "5700 films"]
               },
               {
-                name: "Pro Gamer",
-                price: "39,90",
-                color: "red",
-                features: ["Cloud + Console + Mobile", "Streaming 4K + Discord Boost"]
-              },
-              {
-                name: "Ultimate eSports",
+                name: "King 365",
                 price: "59,90",
+                color: "red",
+                features: ["5200 chaines ", "9700 films"]
+              },
+              {
+                name: "Gold Full 4K TV",
+                price: "69,90",
                 color: "yellow",
-                features: ["Tournois mensuels", "Coaching + Replay Pro"]
+                features: ["7300 chaines ", "11500 films"]
               }
             ].map((plan, i) => (
               <motion.div
@@ -154,7 +154,7 @@ export default function IronKingTV() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Expérience de jeu ultime
+                Famille & Divertissement
               </h2>
               <div className="space-y-4">
                 {[
@@ -200,19 +200,18 @@ export default function IronKingTV() {
         >
           <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-white text-center sm:text-left">
-              Jeux vidéo populaires
+              Films et séries à jour
             </h2>
             <ChevronRight className="w-8 h-8 text-white bg-gray-700 rounded-full p-1" />
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              { name: "Call of Duty", image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg" },
-              { name: "FIFA 24", image: "https://www.fifa-fc.com/wp-content/uploads/2024/09/EA-SPORTS-FC-25-Standard-Edition-PS4-Jeu-Video.jpg" },
-              { name: "Fortnite", image: "https://www.esport-brande.dk/wp-content/uploads/2023/06/Fortnite.jpg" },
-              { name: "GTA V", image: "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" },
-              { name: "God of War", image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" },
-              { name: "The Witcher 3", image: "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" },
+              { name: "Movie 1", image: "/images/p1.jpg" },
+              { name: "Movie 2", image: "/images/p2.jpg" },
+              { name: "Movie 3", image: "/images/p3.jpg" },
+              { name: "Movie 4", image: "/images/p4.jpg" },
+              { name: "Movie 5", image: "/images/p5.jpg" },
             ].map((game, index) => (
               <motion.div
                 key={index}
