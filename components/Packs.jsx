@@ -81,10 +81,10 @@ export default function PricingSection() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
-              Choose Your Plan
+            Choisissez votre formule
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Select the perfect package for your entertainment needs. All plans include premium streaming quality and 24/7 support.
+              Sélectionnez le forfait idéal pour vos besoins en divertissement. Tous les abonnements incluent une qualité de streaming premium et une assistance 24h/24 et 7j/7.
             </p>
           </div>
 
